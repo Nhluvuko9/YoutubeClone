@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 56px;
+    padding: 0px 16px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+}
+.menu {
+    font-size: 24px;
+    padding: 0px 16px 0px 16px;
+    justify-content: center;
+}
+
+.search-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: sticky;
+}
+.mic {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-left: 16px;
+}
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+}
+
+/* Selector */
+#selector {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+iron-selector {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    gap: 16px;
+}
+
+/* Sidebar */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 64px;
+    height: calc(100vh - 56px);
+    padding: 16px;
+    /* position: sticky; */
+}
+
+li {
+    list-style: none;
+    justify-content: center;
+}
+.sidebar-icon {
+    width: 24px;
+    height: 24px;
+}
