@@ -34,47 +34,152 @@
         </div>
 
         <div class="profile">
-            <button><i class="material-icons">add</i>Create</button>
+            <button class="create-btn"><i class="material-icons add">add</i>Create</button>
             <i class="material-icons">notifications_none</i>
-            <img src="./assets/profile-circle.jpg" alt="profile image" class="profile-image">
+            <img src="./images/profile-circle.jpg" alt="profile image" class="profile-image">
         </div>
     </div>
+    </header>    
+    
+    <!-- Main Page -->
+    <div class="page-container">
+
+        <!-- Sidebar -->
+         <aside class="sidebar">
+            <ul>
+                <li><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true" style="pointer-events: none; display: inherit; width: 100%; height: 100%;"><path d="m11.485 2.143-8 4.8-2 1.2a1 1 0 001.03 1.714L3 9.567V20a2 2 0 002 2h5v-8h4v8h5a2 2 0 002-2V9.567l.485.29a1 1 0 001.03-1.714l-2-1.2-8-4.8a1 1 0 00-1.03 0Z"></path></svg>
+                    Home</li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true" style="pointer-events: none; display: inherit; width: 100%; height: 100%;"><path d="m13.467 1.19-8 4.7a5 5 0 00-.255 8.46 5 5 0 005.32 8.462l8-4.7a5 5 0 00.258-8.462 5 5 0 001.641-6.464l-.12-.217a5 5 0 00-6.844-1.78m5.12 2.79a2.999 2.999 0 01-1.067 4.107l-1.327.78a1 1 0 00.096 1.775l.943.423a3 3 0 01.288 5.323l-8 4.7a3 3 0 01-3.039-5.173l1.327-.78a1 1 0 00-.097-1.775l-.942-.423a3 3 0 01-.288-5.323l8-4.7a3 3 0 014.106 1.066ZM15 12l-5-3v6l5-3Z"></path></svg>
+                    Shorts</li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true" style="pointer-events: none; display: inherit; width: 100%; height: 100%;"><path d="M18 1H6a2 2 0 00-2 2h16a2 2 0 00-2-2Zm3 4H3a2 2 0 00-2 2v13a2 2 0 002 2h18a2 2 0 002-2V7a2 2 0 00-2-2ZM3 20V7h18v13H3Zm13-6.5L10 10v7l6-3.5Z"></path></svg>
+                    Subscriptions</li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true" style="pointer-events: none; display: inherit; width: 100%; height: 100%;"><path d="M12 1C5.925 1 1 5.925 1 12s4.925 11 11 11 11-4.925 11-11S18.075 1 12 1Zm0 2a9 9 0 016.447 15.276 7 7 0 00-12.895 0A9 9 0 0112 3Zm0 2a4 4 0 100 8 4 4 0 000-8Zm0 2a2 2 0 110 4 2 2 0 010-4Zm-.1 9.001L11.899 16a5 5 0 014.904 3.61A8.96 8.96 0 0112 21a8.96 8.96 0 01-4.804-1.391 5 5 0 014.704-3.608Z"></path></svg>
+                    You</li>
+                </ul>
+         </aside>
+
+    <!-- Main Content -->
+        <main class="main-content">
 
     <!-- Selector -->
-        <div id="selector">
-            <iron-selector>
-                <div class="selector-item"><button>All</button></div>
-                <div class="selector-item"><button>Live</button></div>
-                <div class="selector-item"><button>Gaming</button></div>
-                <div class="selector-item"><button>Music</button></div>
-                <div class="selector-item"><button>News</button></div>
-                <div class="selector-item"><button>Sports</button></div>
-            </iron-selector>
-          
-        </div>
-    </header>    
-        
-    <!-- Sidebar -->
-     <div class="sidebar">
-        <ul>
-            <li><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true" style="pointer-events: none; display: inherit; width: 100%; height: 100%;"><path d="m11.485 2.143-8 4.8-2 1.2a1 1 0 001.03 1.714L3 9.567V20a2 2 0 002 2h5v-8h4v8h5a2 2 0 002-2V9.567l.485.29a1 1 0 001.03-1.714l-2-1.2-8-4.8a1 1 0 00-1.03 0Z"></path></svg>
-                Home</li>
-            <li><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true" style="pointer-events: none; display: inherit; width: 100%; height: 100%;"><path d="m13.467 1.19-8 4.7a5 5 0 00-.255 8.46 5 5 0 005.32 8.462l8-4.7a5 5 0 00.258-8.462 5 5 0 001.641-6.464l-.12-.217a5 5 0 00-6.844-1.78m5.12 2.79a2.999 2.999 0 01-1.067 4.107l-1.327.78a1 1 0 00.096 1.775l.943.423a3 3 0 01.288 5.323l-8 4.7a3 3 0 01-3.039-5.173l1.327-.78a1 1 0 00-.097-1.775l-.942-.423a3 3 0 01-.288-5.323l8-4.7a3 3 0 014.106 1.066ZM15 12l-5-3v6l5-3Z"></path></svg>
-                Shorts</li>
-            <li><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true" style="pointer-events: none; display: inherit; width: 100%; height: 100%;"><path d="M18 1H6a2 2 0 00-2 2h16a2 2 0 00-2-2Zm3 4H3a2 2 0 00-2 2v13a2 2 0 002 2h18a2 2 0 002-2V7a2 2 0 00-2-2ZM3 20V7h18v13H3Zm13-6.5L10 10v7l6-3.5Z"></path></svg>
-                Subscriptions</li>
-            <li><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true" style="pointer-events: none; display: inherit; width: 100%; height: 100%;"><path d="M12 1C5.925 1 1 5.925 1 12s4.925 11 11 11 11-4.925 11-11S18.075 1 12 1Zm0 2a9 9 0 016.447 15.276 7 7 0 00-12.895 0A9 9 0 0112 3Zm0 2a4 4 0 100 8 4 4 0 000-8Zm0 2a2 2 0 110 4 2 2 0 010-4Zm-.1 9.001L11.899 16a5 5 0 014.904 3.61A8.96 8.96 0 0112 21a8.96 8.96 0 01-4.804-1.391 5 5 0 014.704-3.608Z"></path></svg>
-                You</li>
-            </ul>
-     </div>
+            <div class="tags-container">
+                <button>All</button>
+                <button>Podcast</button>
+                <button>Study Skills</button>
+                <button>Music</button>
+                <button>Web development</button>
+                <button>Fashion</button>
+                <button>Computer programming</button>
+                <button>Psychology</button>
+                <button>Lo-fi</button>
+                <button>Beauty salon</button>
+                <button>ASMR</button>
+            </div>
+            
+            <div class="video-grid">
+                <div class="video-card">
+                    <img src="./images/thumbnail-1.avif" alt="video thumbnail" class="video-thumbnail">
+                    <div class="video-info">
+                        <img src="./images/profile-1.jpg" alt="channel profile image" class="channel-profile-image">
+                        <div class="video-details">
+                            <h3>3-HOUR STUDY WITH ME LOFI with Rainy Sound</h3>
+                            <p>tani study</p>
+                            <p>836 views • 13 hours ago</p>
+                        </div>
+                    </div>
+                </div>
     
-        <!-- Main Content -->
-    <main>
-       
+                <div class="video-card">
+                    <img src="./images/thumbnail-2.avif" alt="video thumbnail" class="video-thumbnail">
+                    <div class="video-info">
+                        <img src="./images/profile-2.jpg" alt="channel profile image" class="channel-profile-image">
+                        <div class="video-details">
+                            <h3>Asking For More When You're Already So Blessed</h3>
+                            <p>Between Mothers and Daughters</p>
+                            <p>5.4K views • 4 months ago</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="video-card">
+                    <img src="./images/thumbnail-3.avif" alt="video thumbnail" class="video-thumbnail">
+                    <div class="video-info">
+                        <img src="./images/profile-3.jpg" alt="channel profile image" class="channel-profile-image">
+                        <div class="video-details">
+                            <h3>Something Strange Happens When You Trust Quantum Mechanics</h3>
+                            <p>Veritasium</p>
+                            <p>18M views • 1 year ago</p>
+                        </div>
+                    </div>
+                </div>
 
-        <!-- More video cards can be added here -->
-    </main>
+                <div class="video-card">
+                    <img src="./images/thumbnail-4.avif" alt="video thumbnail" class="video-thumbnail">
+                    <div class="video-info">
+                        <img src="./images/profile-4.jpg" alt="channel profile image" class="channel-profile-image">
+                        <div class="video-details">
+                            <h3>GLOW UP in Korea 99: new hair,nails LED mask Shop with me Best local..</h3>
+                            <p>Hazi</p>
+                            <p>21K views • 1 day ago</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <img src="./images/thumbnail-5.avif" alt="video thumbnail" class="video-thumbnail">
+                    <div class="video-info">
+                        <img src="./images/profile-5.jpg" alt="channel profile image" class="channel-profile-image">
+                        <div class="video-details">
+                            <h3>Inundated with DMs Since the weather is so nice... From sunglasses I wanted t..</h3>
+                            <p>The 프리지아</p>
+                            <p>34K views • 10 days ago</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <img src="./images/thumbnail-6.avif" alt="video thumbnail" class="video-thumbnail">
+                    <div class="video-info">
+                        <img src="./images/profile-6.jpg" alt="channel profile image" class="channel-profile-image">
+                        <div class="video-details">
+                            <h3>Something Strange Happens When You Trust Quantum Mechanics</h3>
+                            <p>Aperture</p>
+                            <p>368K views • 2 months ago</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="shorts-section">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" focusable="false" aria-hidden="true" style="pointer-events: none; display: inherit; width: 10%; height: 10%;" class="shorts-icon">
+                    <path d="m19.45,3.88c1.12,1.82.48,4.15-1.42,5.22l-1.32.74.94.41c1.36.58,2.27,1.85,2.35,3.27.08,1.43-.68,2.77-1.97,3.49l-8,4.47c-1.91,1.06-4.35.46-5.48-1.35-1.12-1.82-.48-4.15,1.42-5.22l1.33-.74-.94-.41c-1.36-.58-2.27-1.85-2.35-3.27-.08-1.43.68-2.77,1.97-3.49l8-4.47c1.91-1.06,4.35-.46,5.48,1.35Z" fill="#f03"></path>
+                    <path d="m10,15l5-3-5-3v6Z" fill="#fff"></path>
+                  </svg>
+                <h2>Shorts</h2>
+                <div class="shorts-cards">
+                    <a href="https://www.youtube.com/shorts/MU39F6pnzHg">
+                        <img src="./images/short-1.avif" alt="" class="shorts-thumbnail">
+                        <h3>2026 Best Degree (for me)#liferesetwithboni</h3>
+                        <p>5.4K views</p>
+                    </a>
+                </div>
+
+                <div class="shorts-cards">
+                    <a href="https://www.youtube.com/shorts/3xG-XJk1kM0">
+                        <img src="./images/short-2.avif" alt="" class="shorts-thumbnail">
+                        <h3>Song Jia mindset and confidence is everything</h3>
+                        <p>284K views</p>
+                    </a>
+                </div>
+            </div>
+
+        </main>
+
+
+    </div>
     
 
 </body>
 </html>
+
