@@ -123,17 +123,19 @@ li {
 
 .video-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
     gap: 16px;
     width: 100%;
     max-width: 1200px;
 }
 
-.video-card {
-   display: flex;
-   flex-direction: column;
+/* .video-card {
+   display: grid;
+   grid-template-columns: 36px 1fr;
    gap: 12px;
-}
+   align-items: start;
+   width: 100%;
+} */
 
 .video-thumbnail {
     width: 100%;               
@@ -143,16 +145,59 @@ li {
 }
 
 .video-info {
-    grid-auto-flow: column;
-
+   display: grid;
+   grid-template-columns: 36px 1fr;
+   gap: 12px;
+   align-items: start;
+   width: 100%;
+   margin-top: 10px;
 }
+
 .channel-profile-image {
     width: 36px;
     height: 36px;
     border-radius: 50%;
+    grid-column: 1;
+    object-fit: cover;
+}
+
+.video-details {
+    display: flex;
+    flex-direction: column;
+    grid-column: 2;
+    gap: 4px;
+    min-width: 0;
+}
+
+/* Shorts-section */
+.shorts-title {
+    display: flex;
+    align-items: flex-start ;
+    justify-content: flex-start;
+    width: 100%;
 }
 
 .shorts-icon {
-    width: 24px;
-    height: 24px;
+    width: 26px !important;
+    height: 26px;
+}
+
+#shorts-section {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.shorts-cards img {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 8px;
+}   
+.shorts-cards a {
+    text-decoration: none;
+    color: black;
 }
