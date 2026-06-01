@@ -2,7 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 16px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Navigation Bar */
@@ -13,6 +14,7 @@
     justify-content: space-between;
     height: 56px;
     padding: 0px 16px;
+    background-color: #0f0f0f;
 }
 
 .logo {
@@ -21,10 +23,16 @@
     align-items: center;
     gap: 16px;
 }
-.menu {
-    font-size: 24px;
+.logo p {
+    color: #aaaaaa;
+    font-size: 0.75rem;
+}
+.menu-icon {
+    display: flex;
+    flex-direction: row;
     padding: 0px 16px 0px 16px;
     justify-content: center;
+    color: #f1f1f1;
 }
 
 .search-bar {
@@ -33,32 +41,41 @@
     align-items: center;
     position: sticky;
 }
+
+.search-container {
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: rgba(18, 18, 18, 1);
+}
+
 input {
     padding-left: 15px;
     border: 1px solid;
+    border-color: hsl(0, 0%, 18.82%);
+    border-right: none;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
+    background-color: rgba(18, 18, 18, 1);
+    color: #f1f1f1;
 }
+
 .search {
     border: 1px solid;
+    border-color: hsl(0, 0%, 18.82%);
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
+    background-color: rgba(39, 38, 38, 1);
+    color: #f1f1f1;
 }
 .mic {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding-left: 16px;
-}
-
-.profile > button {
-    border: 1px solid;
-    border-radius: 20px;
-    gap: 3px;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
+    background-color: rgba(39, 38, 38, 1);
+    color: #f1f1f1;
+    border-radius: 50%;
 }
 
 .profile {
@@ -68,6 +85,22 @@ input {
     gap: 16px;
 }
 
+.profile button {
+    color: rgba(62, 166, 255, 1);
+    background-color: rgba(18, 18, 18, 1);
+    border-color: rgb(44, 44, 44);
+    border: 1px solid;
+    border-radius: 20px;
+    gap: 3px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile .vert {
+    color: #f1f1f1;
+}
+
 /* Page container below search bar */
 .page-container {
     display: flex;
@@ -75,23 +108,25 @@ input {
 }
 
 /* Sidebar */
-.sidebar {
+.sidebar ul {
     display: grid;
-    grid-auto-flow: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    width: 74px;
-    padding: 16px;
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+}
+aside {
+    background-color: #0f0f0f; 
+    color: #f1f1f1;
 }
 
-li {
-    list-style: none;
-    justify-content: center;
-    font-size: smaller;
-}
-.sidebar-icon {
-    width: 24px;
-    height: 24px;
+.sidebar li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
 }
 
 /* Main Content */
@@ -102,6 +137,7 @@ li {
     align-items: center;
     padding: 24px;
     gap: 24px;
+    background-color: #0f0f0f;
 }
 
 /* Selector */
@@ -110,7 +146,8 @@ li {
     flex-direction: row;             
     overflow-x: auto;
     width: 100%;
-    gap: 12px;   
+    gap: 12px;
+    /* font-size: 0.75rem;    */
     scrollbar-width: none;
 }
 
@@ -121,6 +158,7 @@ li {
     border: none;
 }
 
+/* Video grid section */
 .video-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(250px, 1fr));
@@ -129,13 +167,14 @@ li {
     max-width: 1200px;
 }
 
-/* .video-card {
-   display: grid;
-   grid-template-columns: 36px 1fr;
-   gap: 12px;
-   align-items: start;
-   width: 100%;
-} */
+.video-card a {
+   color: #0f0f0f;
+   text-decoration: none;
+}
+
+h3 {
+    font-size: 1.1rem;
+}
 
 .video-thumbnail {
     width: 100%;               
@@ -167,7 +206,15 @@ li {
     grid-column: 2;
     gap: 4px;
     min-width: 0;
+    color: #f1f1f1;
 }
+
+.video-details p {
+    color: #aaaaaa;
+    display: inline-flex;
+    gap: 4px;
+}
+
 
 /* Shorts-section */
 .shorts-title {
@@ -175,11 +222,13 @@ li {
     align-items: flex-start ;
     justify-content: flex-start;
     width: 100%;
+    background-color: #0f0f0f;
+    color: #f1f1f1;
 }
 
 .shorts-icon {
-    width: 26px !important;
-    height: 26px;
+    width: 22px !important;
+    height: 22px;
 }
 
 #shorts-section {
@@ -199,5 +248,5 @@ li {
 }   
 .shorts-cards a {
     text-decoration: none;
-    color: black;
+    color: #f1f1f1;
 }
