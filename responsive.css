@@ -1,34 +1,452 @@
-@media (min-width: 768px) {
+/* ==================== PHONE SCREEN SIZE (Mobile First) ==================== */
+@media (max-width: 767px) {
+    * {
+        font-size: 12px;
+    }
+
+    body {
+        background-color: #0f0f0f;
+    }
+
+    /* Navigation Bar - Mobile */
+    .navbar {
+        height: 50px;
+        padding: 0px 8px;
+    }
+
+    #yt-logo {
+        width: 80px;
+        height: 40px;
+    }
+
+    .logo p {
+        font-size: 0.6rem;
+        left: -8px;
+        bottom: 8px;
+    }
+
+    .menu-icon {
+        padding: 0px 8px;
+        font-size: 12px;
+    }
+
+    input {
+        width: 100px;
+        height: 36px;
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    .search-container {
+        padding-left: 6px;
+    }
+
+    .search-container:focus-within {
+        padding-left: 24px;
+        padding-right: 28px;
+    }
+
+    .search {
+        width: 50px;
+        height: 36px;
+    }
+
+    #search-icon {
+        transform: scale(3);
+        margin-left: 12px;
+    }
+
+    .mic {
+        width: 36px;
+        height: 36px;
+        padding: 12px;
+        margin-left: 8px;
+    }
+
+    .mic-icon {
+        transform: scale(3.5);
+        width: 18px;
+        height: 18px;
+    }
+
+    .profile {
+        gap: 8px;
+    }
+
+    .profile button {
+        width: 80px;
+        height: 32px;
+        font-size: 11px;
+    }
+
+    #bell-icon {
+        padding: 5px 6px;
+    }
+
+    .profile img {
+        width: 32px;
+        height: 32px;
+    }
+
+    /* Tags/Selector - Mobile */
+    .tags-container {
+        right: 4px;
+    }
+
+    .tag {
+        height: 2.2rem;
+        padding: 0px 8px;
+        font-size: 11px;
+    }
+
+    .tag-active {
+        height: 2.2rem;
+        padding: 0px 8px;
+        font-size: 11px;
+    }
+
+    .tags-track {
+        gap: 8px;
+        padding: 8px 0px;
+    }
+
+    .tags-track .arrow {
+        width: 32px;
+        height: 32px;
+        top: 8px;
+        padding-right: 4px;
+    }
+
+    /* Page Container - Mobile */
+    .page-container {
+        flex-direction: column;
+    }
+
+    /* Sidebar - Mobile (Hidden) */
+    aside {
+        display: none;
+    }
+
+    /* Main Content - Mobile */
+    .main-content {
+        padding: 8px 8px;
+        gap: 12px;
+        width: 100%;
+    }
+
+    /* Video Grid - Mobile (Single Column) */
+    .video-grid {
+        grid-template-columns: 1fr;
+        row-gap: 12px;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .video-info {
+        grid-template-columns: 28px 1fr;
+        gap: 8px;
+    }
+
+    .channel-profile-image {
+        width: 28px;
+        height: 28px;
+    }
+
+    .video-details {
+        gap: 3px;
+    }
+
+    .video-details p {
+        font-size: 11px;
+    }
+
+    .video-title {
+        width: 100%;
+    }
+
+    .video-title h3 {
+        font-size: 13px;
+        margin: 0;
+    }
+
+    h3 {
+        font-size: 13px;
+    }
+
+    .video-card-1, .video-card-2, .video-card-3, .video-card-4, 
+    .video-card-5, .video-card-6, .video-card-7, .video-card-8, 
+    .video-card-9, .video-card-10, .video-card-11, .video-card-12 {
+        padding: 6px;
+    }
+
+    /* Shorts Section - Mobile */
+    #shorts-section {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+        width: 100%;
+    }
+
+    .shorts-card-1, .shorts-card-2, .shorts-card-3, .shorts-card-4, 
+    .shorts-card-5, .shorts-card-6, .shorts-card-7, .shorts-card-8, 
+    .shorts-card-9, .shorts-card-10, img {
+        padding: 6px;
+    }
+
+    .shorts-details {
+        gap: 6px;
+    }
+
+    .shorts-title {
+        font-size: 12px;
+    }
+
+    .options2 {
+        width: 28px;
+        height: 28px;
+    }
+
+    /* User Menu - Mobile */
+    .user-popover-menu {
+        left: 50px;
+        width: 220px;
+        max-height: min(280px, calc(100vh - 60px));
+    }
+
+    .menu-title {
+        font-size: 1rem;
+        padding: 6px 12px 8px;
+    }
+
+    .menu-list {
+        max-height: 150px;
+    }
+
+    .menu-list li a {
+        font-size: 0.9rem;
+        padding: 0 10px;
+    }
+
+    .user-menu-trigger .label {
+        font-size: 0.65rem;
+    }
+}
+
+/* ==================== TABLET SIZE ==================== */
+@media (min-width: 768px) and (max-width: 1023px) {
+    /* Tablet Optimizations */
+    .video-grid {
+        grid-template-columns: repeat(2, minmax(220px, 1fr));
+        row-gap: 16px;
+    }
+
+    input {
+        width: 300px;
+        height: 38px;
+    }
+
+    .search {
+        width: 56px;
+        height: 38px;
+    }
+
+    .mic {
+        width: 38px;
+        height: 38px;
+        padding: 14px;
+        margin-left: 12px;
+    }
+
+    .profile button {
+        width: 90px;
+        height: 34px;
+    }
+
+    .profile img {
+        width: 34px;
+        height: 34px;
+    }
+
+    #shorts-section {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+    }
+
+    .page-container {
+        flex-direction: row;
+    }
+
+    aside {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* ==================== DESKTOP SCREEN SIZE ==================== */
+@media (min-width: 1024px) {
     #yt-logo {
         width: 123px;
         height: 56px;
     }
-    
+
     input {
         width: 536px;
         height: 40px;
     }
+
     .search {
         width: 64px;
         height: 40px;
     }
+
     .mic {
         width: 40px;
         height: 40px;
         padding-left: 16px;
     }
-
+        
     .profile button {
         width: 97px;
         height: 36px;
     }
+
     .profile-image {
-        width: 32px;
-        height: 32px;
+        width: 36px;
+        height: 36px;
         border-radius: 50%;
     }
 
-    .sidebar {
-        display: block;
+    /* Page Container - Desktop */
+    .page-container {
+        flex-direction: row;
+    }
+
+    /* Sidebar - Desktop (Visible) */
+    aside {
+        display: flex;
+        flex-direction: column;
+        min-width: 240px;
+        background-color: #0f0f0f;
+    }
+
+    .sidebar ul {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    /* Main Content - Desktop */
+    .main-content {
+        flex-grow: 1;
+        padding: 10px 16px;
+        gap: 16px;
+    }
+
+    /* Video Grid - Desktop (3 Columns) */
+    .video-grid {
+        grid-template-columns: repeat(3, minmax(250px, 1fr));
+        row-gap: 20px;
+        width: 100%;
+        max-width: 1200px;
+    }
+
+    .video-info {
+        grid-template-columns: 36px 1fr;
+        gap: 12px;
+    }
+
+    .channel-profile-image {
+        width: 36px;
+        height: 36px;
+    }
+
+    .video-title {
+        width: 250px;
+    }
+
+    .video-title h3 {
+        font-size: 1.1rem;
+    }
+
+    h3 {
+        font-size: 1.1rem;
+    }
+
+    .video-card-1, .video-card-2, .video-card-3, .video-card-4, 
+    .video-card-5, .video-card-6, .video-card-7, .video-card-8, 
+    .video-card-9, .video-card-10, .video-card-11, .video-card-12 {
+        padding: 10px;
+    }
+
+    /* Shorts Section - Desktop */
+    #shorts-section {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 12px;
+        width: 100%;
+    }
+
+    .shorts-card-1, .shorts-card-2, .shorts-card-3, .shorts-card-4, 
+    .shorts-card-5, .shorts-card-6, .shorts-card-7, .shorts-card-8, 
+    .shorts-card-9, .shorts-card-10, img {
+        padding: 8px;
+    }
+
+    .shorts-details {
+        gap: 8px;
+    }
+
+    .shorts-title {
+        font-size: 0.9rem;
+    }
+
+    .options2 {
+        width: 36px;
+        height: 36px;
+    }
+
+    /* User Menu - Desktop */
+    .user-popover-menu {
+        left: 72px;
+        width: 260px;
+        max-height: min(320px, calc(100vh - 80px));
+    }
+
+    .menu-title {
+        font-size: 1.25rem;
+        padding: 8px 16px 10px;
+    }
+
+    .menu-list {
+        max-height: 180px;
+    }
+
+    .menu-list li a {
+        font-size: 1rem;
+        padding: 0 12px;
+    }
+
+    .user-menu-trigger .label {
+        font-size: 0.72rem;
+    }
+
+    /* Navigation Bar - Desktop */
+    .navbar {
+        height: 56px;
+        padding: 0px 16px;
+    }
+
+    .menu-icon {
+        padding: 0px 16px;
+    }
+
+    .search-container {
+        padding-left: 8px;
+    }
+
+    .search-container:focus-within {
+        padding-left: 32px;
+        padding-right: 35px;
+    }
+
+    .profile {
+        gap: 16px;
     }
 }

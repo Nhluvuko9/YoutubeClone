@@ -42,10 +42,13 @@
             <div class="search-container">
                 <input type="search" placeholder="Search..." class="search-input">
             </div>
-            <button class="search"><img src="./assets/search-icon.svg" alt="search icon" class="search-icon"></button>
+            <button class="search"><img src="./assets/search-icon.svg" alt="search icon" id="search-icon" style="width: 22px; height: 22px;"></button>
+            <!-- <i class="material-icons search">search</i> -->
             
             <!-- <span class="material-icons" style="color: #f1f1f1; padding-right: 8px; height: 24px;">clear</span> -->
-            <button class="mic"><img src="./assets/mic-icon.svg" alt="mic icon" class="mic-icon" style="width: 22px;"></button>
+            
+            <!-- <img src="./assets/mic-icon.svg" alt="mic icon" class="mic-icon" style="width: 22px;"> -->
+            <button class="mic"><i class="material-icons" id="mic-icon" style="color: #f1f1f1;">mic_none</i></button>
         </div>
 
         <div class="profile">
@@ -54,6 +57,27 @@
             <img src="./assets/profile-circle.jpg" alt="profile image" class="profile-image">
         </div>
     </div>
+
+    <!-- Selector -->
+    <div class="tags-container">
+        <div class="tags-track">
+            <button class="tag-active">All</button>
+            <a href="https://www.youtube.com/"><button class="tag">Podcast</button></a>
+            <button class="tag">Study Skills</button>
+            <button class="tag">Music</button>
+            <button class="tag">Live</button>
+            <button class="tag">Shopping</button>
+            <button class="tag">Psychology</button>
+            <button class="tag">Playlists</button>
+            <button class="tag">Beauty salon</button>
+            <button class="tag">News</button>
+            <button class="tag">ASMR</button>
+            <button class="tag">Clothing</button>
+            <button class="tag">Recently uploaded</button>
+            <button class="arrow"><i class="material-icons chevron_right">chevron_right</i></button>
+        </div>
+    </div>
+
     </header>   
     
     <!-- Main Page -->
@@ -62,12 +86,17 @@
         <!-- Sidebar -->
         <aside class="sidebar">
             <ul>
-                <li><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true" fill="#f1f1f1" style="pointer-events: none; display: inherit; width: 50%; height: 50%; fill: #f1f1f1;"><path d="m11.485 2.143-8 4.8-2 1.2a1 1 0 001.03 1.714L3 9.567V20a2 2 0 002 2h6v-7h2v7h6a2 2 0 002-2V9.567l.485.29a1 1 0 001.03-1.714l-2-1.2-8-4.8a1 1 0 00-1.03 0ZM5 8.366l7-4.2 7 4.2V20h-4v-5.5a1.5 1.5 0 00-1.5-1.5h-3A1.5 1.5 0 009 14.5V20H5V8.366Z"></path></svg>
-                    <span style="align-items: center; font-size: 0.72rem; font-weight: 500; padding-top: 7px;">Home</span> 
-                </li>
-                <li><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true" style="pointer-events: none; display: inherit; width: 50%; height: 50%; fill: #f1f1f1;"><path d="m13.467 1.19-8 4.7a5 5 0 00-.255 8.46 5 5 0 005.32 8.462l8-4.7a5 5 0 00.258-8.462 5 5 0 001.641-6.464l-.12-.217a5 5 0 00-6.844-1.78m5.12 2.79a2.999 2.999 0 01-1.067 4.107l-1.327.78a1 1 0 00.096 1.775l.943.423a3 3 0 01.288 5.323l-8 4.7a3 3 0 01-3.039-5.173l1.327-.78a1 1 0 00-.097-1.775l-.942-.423a3 3 0 01-.288-5.323l8-4.7a3 3 0 014.106 1.066ZM15 12l-5-3v6l5-3Z"></path></svg>
-                    <span style="align-items: center; font-size: 0.72rem; font-weight: 500; padding-top: 7px;">Shorts</span>
-                </li>
+                <div class="home-btn">
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true" fill="#f1f1f1" style="pointer-events: none; display: inherit; width: 50%; height: 50%; fill: #f1f1f1;"><path d="m11.485 2.143-8 4.8-2 1.2a1 1 0 001.03 1.714L3 9.567V20a2 2 0 002 2h6v-7h2v7h6a2 2 0 002-2V9.567l.485.29a1 1 0 001.03-1.714l-2-1.2-8-4.8a1 1 0 00-1.03 0ZM5 8.366l7-4.2 7 4.2V20h-4v-5.5a1.5 1.5 0 00-1.5-1.5h-3A1.5 1.5 0 009 14.5V20H5V8.366Z"></path></svg>
+                        <span class="tooltip" style="align-items: center; font-size: 0.72rem; font-weight: 500; padding-top: 7px;">Home</span> 
+                    </li>
+                </div>
+                <div class="shorts-btn">
+                    <li><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true" style="pointer-events: none; display: inherit; width: 50%; height: 50%; fill: #f1f1f1;"><path d="m13.467 1.19-8 4.7a5 5 0 00-.255 8.46 5 5 0 005.32 8.462l8-4.7a5 5 0 00.258-8.462 5 5 0 001.641-6.464l-.12-.217a5 5 0 00-6.844-1.78m5.12 2.79a2.999 2.999 0 01-1.067 4.107l-1.327.78a1 1 0 00.096 1.775l.943.423a3 3 0 01.288 5.323l-8 4.7a3 3 0 01-3.039-5.173l1.327-.78a1 1 0 00-.097-1.775l-.942-.423a3 3 0 01-.288-5.323l8-4.7a3 3 0 014.106 1.066ZM15 12l-5-3v6l5-3Z"></path></svg>
+                        <span style="align-items: center; font-size: 0.72rem; font-weight: 500; padding-top: 7px;">Shorts</span>
+                    </li>
+                </div>
             </ul>
 
             <div class="user-menu-container">
@@ -113,25 +142,6 @@
     <!-- Main Content -->
         <main class="main-content">
 
-    <!-- Selector -->
-            <div class="tags-container">
-                <div class="tags-track">
-                    <button class="tag-active">All</button>
-                    <a href="https://www.youtube.com/"><button class="tag">Podcast</button></a>
-                    <button class="tag">Study Skills</button>
-                    <button class="tag">Music</button>
-                    <button class="tag">Live</button>
-                    <button class="tag">Shopping</button>
-                    <button class="tag">Psychology</button>
-                    <button class="tag">Playlists</button>
-                    <button class="tag">Beauty salon</button>
-                    <button class="tag">ASMR</button>
-                    <button class="tag">Clothing</button>
-                    <button class="tag">Recently uploaded</button>
-                    <button class="arrow"><i class="material-icons chevron_right">chevron_right</i></button>
-                </div>
-            </div>
-            
     <!----------------------------1st Video Grid Section ------------------------------>
             <div class="video-grid">
                 <div class="video-card-1">
