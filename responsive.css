@@ -324,7 +324,7 @@
     aside {
         display: flex;
         flex-direction: column;
-        min-width: 240px;
+        min-width: 80px;
         background-color: #0f0f0f;
     }
 
